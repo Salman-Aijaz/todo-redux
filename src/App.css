@@ -1,38 +1,118 @@
-.App {
+
+body {
+  margin: 0;
+  background: #219C90;
+}
+#formDiv {
+  width: 550px;
+  height: auto;
+  margin: 70px auto;
+  padding: 50px;
+  background: #ffffffdb;
+  border-radius: 15px;
+}
+#formDiv h1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: sans-serif;
+  color: #000;
+  margin-bottom: 35px;
+}
+#formDiv form {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#todoText {
+  width: 80%;
+  height: 40px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 0 10px;
+  vertical-align: middle;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#todoText:focus-visible {
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#todoAdd {
+  width: 12%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #8b5ec6;
+  vertical-align: middle;
 }
-
-.App-link {
-  color: #61dafb;
+#formDiv ul {
+  list-style: none;
+  padding: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#formDiv li {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 4px 10px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  width: 93%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.delete-botton {
+  width: 12%;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #dc3545;
+  vertical-align: middle;
+  float: right;
+}
+.done-botton {
+  width: 12%;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #28a745;
+  vertical-align: middle;
+  float: right;
+  margin-right: 5px;
+}
+.edit-botton {
+  width: 12%;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ebd316;
+  vertical-align: middle;
+  float: right;
+  margin-right: 5px;
+}
+#todoUl form {
+  text-align: left;
+}
+#todoUl input {
+  border: none;
+  border-bottom: 1px solid;
+  float: left;
+  width: 58%;
+  font-size: 18px;
+}
+#todoUl input:focus-visible{
+  outline: none;
 }
